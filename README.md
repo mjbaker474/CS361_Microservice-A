@@ -43,3 +43,8 @@ Example to receive data from the service:
     socket.send_string("START")
     response = socket.recv()
     print("Server Response:", response.decode())
+
+## Sequence diagram
+![Sequence Diagram](https://github.com/user-attachments/assets/4e2d1092-b818-44fa-8ecf-ad8025b6f946)
+
+
