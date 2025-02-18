@@ -10,7 +10,7 @@ the timer. The service then calculates the total elapsed time spent journaling a
 
 ## Communication Contract
 
-To receive data from the microservice, the client must first establish a ZeroMQ reqeust socket at "tcp://localhost:5555"
+To receive data from the microservice, the client must first establish a ZeroMQ request socket at "tcp://localhost:5555"
 
 Python example:
 
