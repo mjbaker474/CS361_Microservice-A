@@ -5,7 +5,7 @@
 ## Overview
 
 This microservice tracks the time spent writing a journal entry. The client can sends a request to the service to start
-the timer wehn journaling is initiated, then sends another request to the service when journaling is completed to stop
+the timer when journaling is initiated, then sends another request to the service when journaling is completed to stop
 the timer. The service then calculates the total elapsed time spent journaling and and returns it to the client.
 
 ## Communication Contract
