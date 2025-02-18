@@ -6,7 +6,7 @@
 
 This microservice tracks the time spent writing a journal entry. The client can sends a request to the service to start
 the timer when journaling is initiated, then sends another request to the service when journaling is completed to stop
-the timer. The service then calculates the total elapsed time spent journaling and and returns it to the client.
+the timer. The service then calculates the total elapsed time spent journaling and returns it to the client.
 
 ## Communication Contract
 
@@ -30,7 +30,7 @@ Example to start the timer:
     response = socket.recv()
     print("Server Response:", response.decode())
 
-## Receiving data from the micro service.
+## Receiving data from the micro service
 
 The service will respond to requests with the following responses:
 * Start request "START": "Timer started." 
@@ -38,7 +38,7 @@ The service will respond to requests with the following responses:
 * Quit request "Q": No response, connection will terminate.
 * Unknown request: "Unknown request"
 
-Example to recieve data from the service:
+Example to receive data from the service:
    
     socket.send_string("START")
     response = socket.recv()
