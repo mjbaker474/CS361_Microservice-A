@@ -5,12 +5,12 @@
 ## Overview
 
 This microservice tracks the time spent writing a journal entry. The client can sends a request to the service to start
-the timer wehn journaling is initiated, then sends another request to the service when journaling is completed to stop
-the timer. The service then calculates the total elapsed time spent journaling and and returns it to the client.
+the timer when journaling is initiated, then sends another request to the service when journaling is completed to stop
+the timer. The service then calculates the total elapsed time spent journaling and returns it to the client.
 
 ## Communication Contract
 
-To receive data from the microservice, the client must first establish a ZeroMQ reqeust socket at "tcp://localhost:5555"
+To receive data from the microservice, the client must first establish a ZeroMQ request socket at "tcp://localhost:5555"
 
 Python example:
 
@@ -30,7 +30,7 @@ Example to start the timer:
     response = socket.recv()
     print("Server Response:", response.decode())
 
-## Receiving data from the micro service.
+## Receiving data from the micro service
 
 The service will respond to requests with the following responses:
 * Start request "START": "Timer started." 
@@ -38,8 +38,13 @@ The service will respond to requests with the following responses:
 * Quit request "Q": No response, connection will terminate.
 * Unknown request: "Unknown request"
 
-Example to recieve data from the service:
+Example to receive data from the service:
    
     socket.send_string("START")
     response = socket.recv()
     print("Server Response:", response.decode())
+
+## Sequence diagram
+![Sequence Diagram](https://github.com/user-attachments/assets/4e2d1092-b818-44fa-8ecf-ad8025b6f946)
+
+
