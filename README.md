@@ -34,7 +34,7 @@ Example to start the timer:
 
 The service will respond to requests with the following responses:
 * Start request "START": "Timer started." 
-* Stop request "STOP": "Timer ended, total time was X.X seconds."
+* Stop request "STOP": "X.X"
 * Quit request "Q": No response, connection will terminate.
 * Unknown request: "Unknown request"
 
